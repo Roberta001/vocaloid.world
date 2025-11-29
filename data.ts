@@ -169,14 +169,6 @@ export const siteData: SiteConfig = {
           tags: ["wiki","english"]
         },
         {
-          id: "moegirl",
-          url: "https://zh.moegirl.org.cn/Vocaloid",
-          name: { en: "Moegirl Vocaloid", ja: "萌娘百科 Vocaloid", zh: "萌娘百科 Vocaloid" },
-          description: { en: "Anime culture wiki (CN).", ja: "中国のアニメ文化Wiki。", zh: "万物皆可萌的百科全书。" },
-          icon: "Globe",
-          tags: ["wiki", "chinese"]
-        },
-        {
           id: "vocawiki",
           url: "https://voca.wiki/",
           name: { en: "Vocawiki", ja: "Vocawiki", zh: "Vocawiki" },
@@ -187,7 +179,7 @@ export const siteData: SiteConfig = {
           },
           icon: "Globe",
           iconUrl: "https://voca.wiki/favicon.ico",
-          tags: ["wiki"]
+          tags: ["wiki","chinese"]
         },
         {
           id: "lisfox",
