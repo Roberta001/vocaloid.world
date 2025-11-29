@@ -14,7 +14,11 @@ export const siteData: SiteConfig = {
           id: "vocaloid",
           url: "https://www.vocaloid.com/",
           name: { en: "VOCALOID Official", ja: "VOCALOID 公式", zh: "VOCALOID 官网" },
-          description: { en: "The standard for vocal synthesis.", ja: "歌声合成のスタンダード。", zh: "歌声合成技术的行业标准。" },
+          description: { 
+            en: "Liberate your music production.", 
+            ja: "キミの音楽制作を自由にする", 
+            zh: "释放你的音乐创作力。" 
+          },
           icon: "Mic2",
           iconUrl: "https://www.vocaloid.com/favicon.ico",
           tags: ["yamaha", "editor"]
@@ -23,7 +27,11 @@ export const siteData: SiteConfig = {
           id: "synthv",
           url: "https://dreamtonics.com/synthesizerv/",
           name: { en: "Synthesizer V", ja: "Synthesizer V", zh: "Synthesizer V" },
-          description: { en: "AI-driven realistic vocals.", ja: "AI技術によるリアルな歌声。", zh: "AI驱动的逼真歌声合成软件。" },
+          description: { 
+            en: "The Industry-Standard Song & Vocal Production Software", 
+            ja: "業界標準の歌声・ボーカル制作ソフトウェア", 
+            zh: "行业标准的歌曲与人声制作软件" 
+          },
           icon: "Sparkles",
           iconUrl: "https://dreamtonics.com/wp-content/themes/homepage_theme_240416/assets/img/favicon.ico",
           tags: ["ai", "dreamtonics"]
@@ -32,7 +40,11 @@ export const siteData: SiteConfig = {
           id: "ace",
           url: "https://ace-studio.timedomain.cn/",
           name: { en: "ACE Studio", ja: "ACE Studio", zh: "ACE Studio" },
-          description: { en: "Next-gen AI vocal synthesis.", ja: "次世代AI歌声合成。", zh: "新一代AI歌声合成引擎。" },
+          description: { 
+            en: "AI SINGING VOICE GENERATOR", 
+            ja: "AI歌声合成ジェネレーター", 
+            zh: "AI歌声合成生成器" 
+          },
           icon: "Music",
           iconUrl: "https://acestudio.ai/favicon.ico",
           tags: ["ai", "subscription"]
@@ -41,7 +53,11 @@ export const siteData: SiteConfig = {
           id: "cevio",
           url: "https://cevio.jp/",
           name: { en: "CeVIO AI", ja: "CeVIO AI", zh: "CeVIO AI" },
-          description: { en: "Voice creation utilizing AI.", ja: "AI技術を活用した音声創作。", zh: "利用AI技术的语音创作软件。" },
+          description: { 
+            en: "New-gen software reproducing human vocal nuances via AI.", 
+            ja: "AI技術により、人間の声質・癖・歌い方・話し方を高精度に再現する新世代の音声創作ソフトウェア。", 
+            zh: "利用AI高精度再现人声特质与习惯的新一代语音创作软件。" 
+          },
           icon: "Cpu",
           iconUrl: "https://cevio.jp/favicon.ico",
           tags: ["ai"]
@@ -50,19 +66,14 @@ export const siteData: SiteConfig = {
           id: "openutau",
           url: "https://www.openutau.com/",
           name: { en: "OpenUtau", ja: "OpenUtau", zh: "OpenUtau" },
-          description: { en: "Modern open-source UTAU editor.", ja: "UTAUのためのモダンなエディタ。", zh: "现代化的开源UTAU编辑器。" },
+          description: { 
+            en: "Open singing synthesis platform / Open source UTAU successor", 
+            ja: "オープンな歌声合成プラットフォーム / UTAUの後継", 
+            zh: "开放歌声合成平台 / 开源UTAU继承者" 
+          },
           icon: "Code",
           iconUrl: "https://www.openutau.com/assets/images/favicon.png",
           tags: ["opensource", "free"]
-        },
-        {
-          id: "piapro",
-          url: "https://piapro.net/intl/en.html",
-          name: { en: "Piapro Studio", ja: "Piapro Studio", zh: "Piapro Studio" },
-          description: { en: "Crypton's vocal editor plugin.", ja: "クリプトン製ボーカルエディタ。", zh: "Crypton Future Media开发的编辑器插件。" },
-          icon: "Music",
-          iconUrl: "https://piapro.net/intl/images/favicon.ico",
-          tags: ["miku", "plugin"]
         }
       ]
     },
@@ -78,8 +89,13 @@ export const siteData: SiteConfig = {
           id: "bowlroll",
           url: "https://bowlroll.net/",
           name: { en: "BowlRoll", ja: "BowlRoll", zh: "BowlRoll" },
-          description: { en: "MMD models and data repository.", ja: "MMDモデル等のデータ配布所。", zh: "MMD模型与数据分发站。" },
+          description: { 
+            en: "Platform for sharing creative works, assets, and information.", 
+            ja: "動画、画像、音楽、ゲーム等の作品公開、及び制作における素材やプログラムの配布、情報共有の場を提供するサイトです。", 
+            zh: "作品发布与制作素材、程序分发及信息共享平台。" 
+          },
           icon: "Box",
+          iconUrl: "https://bowlroll.net/favicon.ico",
           tags: ["mmd", "download"]
         },
         {
@@ -88,14 +104,20 @@ export const siteData: SiteConfig = {
           name: { en: "piapro", ja: "piapro (ピアプロ)", zh: "piapro" },
           description: { en: "Official content collaboration.", ja: "CGM型コンテンツ投稿サイト。", zh: "官方内容投稿与协作平台。" },
           icon: "Palette",
+          iconUrl: "https://piapro.jp/r/images/header/favicon.ico",
           tags: ["art", "music"]
         },
         {
           id: "vsqx",
-          url: "https://vsqx.top/",
+          url: "https://www.vsqx.top/",
           name: { en: "VSQx.top", ja: "VSQx.top", zh: "VSQx.top" },
-          description: { en: "Motion and project files.", ja: "プロジェクトファイル共有。", zh: "工程文件与调教分享。" },
+          description: { 
+            en: "Vocaloid technical articles and project file sharing.", 
+            ja: "Vocaloid技術記事・プロジェクトファイル共有サイト。", 
+            zh: "Vocaloid软件的技术文章、工程文件分享站" 
+          },
           icon: "FileAudio",
+          iconUrl: "https://vsqx-assets.vsqx.top/icon/icon_10_s.ico",
           tags: ["ust", "vsqx"]
         }
       ]
@@ -109,28 +131,16 @@ export const siteData: SiteConfig = {
       },
       items: [
         {
-          id: "bili_tutorial",
-          url: "https://search.bilibili.com/all?keyword=vocaloid%20%E6%95%99%E7%A8%8B",
-          name: { en: "Bilibili Tutorials", ja: "Bilibili 講座", zh: "Bilibili 教程搜索" },
-          description: { en: "Video tutorials (Chinese).", ja: "中国語圏の動画講座。", zh: "海量中文Vocaloid调教教程。" },
-          icon: "Tv",
-          tags: ["video", "learning"]
-        },
-        {
-          id: "yt_tutorial",
-          url: "https://www.youtube.com/results?search_query=vocaloid+tuning+tutorial",
-          name: { en: "YouTube Tutorials", ja: "YouTube 講座", zh: "YouTube 教程搜索" },
-          description: { en: "Global video tutorials.", ja: "世界中の動画講座。", zh: "全球用户的视频教程。" },
-          icon: "Video",
-          tags: ["video", "learning"]
-        },
-        {
-          id: "wiki_tutorial",
-          url: "https://vocaloid.fandom.com/wiki/Category:Tutorials",
-          name: { en: "Wiki Guides", ja: "Wiki ガイド", zh: "Wiki 文字教程" },
-          description: { en: "Written technical guides.", ja: "技術的な解説記事。", zh: "技术文档与文字指南。" },
+          id: "ivocaloid",
+          url: "http://wiki.ivocaloid.com/information:tutorial",
+          name: { en: "VOCALOID & UTAU Tutorials", ja: "VOCALOID・UTAU講座まとめ", zh: "VOCALOID、UTAU教程汇总" },
+          description: { 
+            en: "Comprehensive collection of tutorials.", 
+            ja: "VOCALOIDやUTAUの講座・チュートリアル集。", 
+            zh: "VOCALOID、UTAU教程汇总。" 
+          },
           icon: "Book",
-          tags: ["text", "guide"]
+          tags: ["wiki", "learning"]
         }
       ]
     },
@@ -156,7 +166,7 @@ export const siteData: SiteConfig = {
           name: { en: "Vocaloid Wiki", ja: "Vocaloid Wiki", zh: "Vocaloid 维基" },
           description: { en: "Community encyclopedia.", ja: "コミュニティ百科事典。", zh: "社区维护的百科全书。" },
           icon: "Book",
-          tags: ["wiki"]
+          tags: ["wiki","english"]
         },
         {
           id: "moegirl",
@@ -165,6 +175,44 @@ export const siteData: SiteConfig = {
           description: { en: "Anime culture wiki (CN).", ja: "中国のアニメ文化Wiki。", zh: "万物皆可萌的百科全书。" },
           icon: "Globe",
           tags: ["wiki", "chinese"]
+        },
+        {
+          id: "vocawiki",
+          url: "https://voca.wiki/",
+          name: { en: "Vocawiki", ja: "Vocawiki", zh: "Vocawiki" },
+          description: { 
+            en: "Wiki for non-Chinese/foreign virtual singers.", 
+            ja: "非中国語圏のバーチャルシンガーWiki。", 
+            zh: "非中文/外文虚拟歌手Wiki。" 
+          },
+          icon: "Globe",
+          iconUrl: "https://voca.wiki/favicon.ico",
+          tags: ["wiki"]
+        },
+        {
+          id: "lisfox",
+          url: "https://monitor.lisfox.top/",
+          name: { en: "Vocaloid Scanner", ja: "Vocaloid Scanner", zh: "Vocaloid Scanner" },
+          description: { 
+            en: "Real-time data scanner for Bilibili, YouTube, and Niconico.", 
+            ja: "Bilibili/Youtube/Niconicoリアルタイムデータスキャナー。", 
+            zh: "Bilibili/Youtube/Niconico实时数据扫描器" 
+          },
+          icon: "Activity",
+          tags: ["data", "tool"]
+        },
+        {
+          id: "vocabili",
+          url: "https://vocabili.top/",
+          name: { en: "Vocabili Database", ja: "Vocabili データベース", zh: "术力口数据库" },
+          description: { 
+            en: "Daily statistics for Bilibili virtual singer songs.", 
+            ja: "Bilibiliバーチャルシンガー楽曲の日次データ統計。", 
+            zh: "bilibili虚拟歌手歌曲每日数据统计" 
+          },
+          icon: "BarChart",
+          iconUrl: "https://vocabili.top/favicon.ico",
+          tags: ["statistics", "bilibili"]
         }
       ]
     },
@@ -199,6 +247,23 @@ export const siteData: SiteConfig = {
           description: { en: "Major Chinese community.", ja: "中国の動画コミュニティ。", zh: "最大的中文Vocaloid视频社区。" },
           icon: "Tv",
           tags: ["video", "chinese"]
+        },
+        {
+          id: "qqgroup",
+          url: "https://qm.qq.com/q/RkHJSVB7mE",
+          name: { 
+            en: "Shulikou Gathering (QQ)", 
+            ja: "术力口聚集地 (QQ)", 
+            zh: "术力口聚集地" 
+          },
+          description: { 
+            en: "A group deeply in love with Vocaloid.", 
+            ja: "VOCALOIDを深く愛するグループ。", 
+            zh: "这是一个深爱着术力口的群" 
+          },
+          icon: "MessageSquare",
+          iconUrl: "https://p.qlogo.cn/gh/731192205/731192205/640/",
+          tags: ["chat", "chinese", "qq"]
         }
       ]
     }

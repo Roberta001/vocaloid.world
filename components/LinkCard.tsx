@@ -23,7 +23,7 @@ export const LinkCard: React.FC<Props> = ({ item, lang }) => {
               <img 
                 src={item.iconUrl} 
                 alt="" 
-                className="w-6 h-6 object-contain"
+                className="w-6 h-6 object-contain rounded-md"
                 referrerPolicy="no-referrer"
               />
             ) : (
