@@ -27,12 +27,12 @@ export const siteData: SiteConfig = {
           tags: ["ai", "dreamtonics"]
         },
         {
-          id: "piapro",
-          url: "https://piapro.net/intl/en.html",
-          name: { en: "Piapro Studio", ja: "Piapro Studio", zh: "Piapro Studio" },
-          description: { en: "Crypton's vocal editor plugin.", ja: "クリプトン製ボーカルエディタ。", zh: "Crypton Future Media开发的编辑器插件。" },
+          id: "ace",
+          url: "https://ace-studio.timedomain.cn/",
+          name: { en: "ACE Studio", ja: "ACE Studio", zh: "ACE Studio" },
+          description: { en: "Next-gen AI vocal synthesis.", ja: "次世代AI歌声合成。", zh: "新一代AI歌声合成引擎。" },
           icon: "Music",
-          tags: ["miku", "plugin"]
+          tags: ["ai", "subscription"]
         },
         {
           id: "cevio",
@@ -43,20 +43,88 @@ export const siteData: SiteConfig = {
           tags: ["ai"]
         },
         {
-          id: "utau",
-          url: "http://utau-synth.com/",
-          name: { en: "UTAU", ja: "UTAU", zh: "UTAU" },
-          description: { en: "Free singing voice synthesis tool.", ja: "歌声合成ツール（フリーソフト）。", zh: "经典的免费歌声合成工具。" },
-          icon: "Download",
-          tags: ["free", "legacy"]
-        },
-        {
           id: "openutau",
           url: "https://www.openutau.com/",
           name: { en: "OpenUtau", ja: "OpenUtau", zh: "OpenUtau" },
-          description: { en: "Modern open-source editor for UTAU.", ja: "UTAUのためのモダンなオープンソースエディタ。", zh: "现代化的开源UTAU编辑器。" },
+          description: { en: "Modern open-source UTAU editor.", ja: "UTAUのためのモダンなエディタ。", zh: "现代化的开源UTAU编辑器。" },
           icon: "Code",
-          tags: ["opensource"]
+          tags: ["opensource", "free"]
+        },
+        {
+          id: "piapro",
+          url: "https://piapro.net/intl/en.html",
+          name: { en: "Piapro Studio", ja: "Piapro Studio", zh: "Piapro Studio" },
+          description: { en: "Crypton's vocal editor plugin.", ja: "クリプトン製ボーカルエディタ。", zh: "Crypton Future Media开发的编辑器插件。" },
+          icon: "Music",
+          tags: ["miku", "plugin"]
+        }
+      ]
+    },
+    {
+      id: "resources",
+      title: {
+        en: "Resources & Assets",
+        ja: "素材・リソース",
+        zh: "资源与素材"
+      },
+      items: [
+        {
+          id: "bowlroll",
+          url: "https://bowlroll.net/",
+          name: { en: "BowlRoll", ja: "BowlRoll", zh: "BowlRoll" },
+          description: { en: "MMD models and data repository.", ja: "MMDモデル等のデータ配布所。", zh: "MMD模型与数据分发站。" },
+          icon: "Box",
+          tags: ["mmd", "download"]
+        },
+        {
+          id: "piapronet",
+          url: "https://piapro.jp/",
+          name: { en: "piapro", ja: "piapro (ピアプロ)", zh: "piapro" },
+          description: { en: "Official content collaboration.", ja: "CGM型コンテンツ投稿サイト。", zh: "官方内容投稿与协作平台。" },
+          icon: "Palette",
+          tags: ["art", "music"]
+        },
+        {
+          id: "vsqx",
+          url: "https://vsqx.top/",
+          name: { en: "VSQx.top", ja: "VSQx.top", zh: "VSQx.top" },
+          description: { en: "Motion and project files.", ja: "プロジェクトファイル共有。", zh: "工程文件与调教分享。" },
+          icon: "FileAudio",
+          tags: ["ust", "vsqx"]
+        }
+      ]
+    },
+    {
+      id: "tutorials",
+      title: {
+        en: "Tutorials & Guides",
+        ja: "チュートリアル・講座",
+        zh: "教程与指南"
+      },
+      items: [
+        {
+          id: "bili_tutorial",
+          url: "https://search.bilibili.com/all?keyword=vocaloid%20%E6%95%99%E7%A8%8B",
+          name: { en: "Bilibili Tutorials", ja: "Bilibili 講座", zh: "Bilibili 教程搜索" },
+          description: { en: "Video tutorials (Chinese).", ja: "中国語圏の動画講座。", zh: "海量中文Vocaloid调教教程。" },
+          icon: "Tv",
+          tags: ["video", "learning"]
+        },
+        {
+          id: "yt_tutorial",
+          url: "https://www.youtube.com/results?search_query=vocaloid+tuning+tutorial",
+          name: { en: "YouTube Tutorials", ja: "YouTube 講座", zh: "YouTube 教程搜索" },
+          description: { en: "Global video tutorials.", ja: "世界中の動画講座。", zh: "全球用户的视频教程。" },
+          icon: "Video",
+          tags: ["video", "learning"]
+        },
+        {
+          id: "wiki_tutorial",
+          url: "https://vocaloid.fandom.com/wiki/Category:Tutorials",
+          name: { en: "Wiki Guides", ja: "Wiki ガイド", zh: "Wiki 文字教程" },
+          description: { en: "Written technical guides.", ja: "技術的な解説記事。", zh: "技术文档与文字指南。" },
+          icon: "Book",
+          tags: ["text", "guide"]
         }
       ]
     },
@@ -95,40 +163,6 @@ export const siteData: SiteConfig = {
       ]
     },
     {
-      id: "resources",
-      title: {
-        en: "Resources & Assets",
-        ja: "素材・リソース",
-        zh: "资源与素材"
-      },
-      items: [
-        {
-          id: "bowlroll",
-          url: "https://bowlroll.net/",
-          name: { en: "BowlRoll", ja: "BowlRoll", zh: "BowlRoll" },
-          description: { en: "MMD models and data repository.", ja: "MMDモデル等のデータ配布所。", zh: "MMD模型与数据分发站。" },
-          icon: "Box",
-          tags: ["mmd", "download"]
-        },
-        {
-          id: "piapronet",
-          url: "https://piapro.jp/",
-          name: { en: "piapro", ja: "piapro (ピアプロ)", zh: "piapro" },
-          description: { en: "Content collaboration site.", ja: "CGM型コンテンツ投稿サイト。", zh: "官方内容投稿与协作平台。" },
-          icon: "Palette",
-          tags: ["art", "music"]
-        },
-        {
-          id: "vsqx",
-          url: "https://vsqx.top/",
-          name: { en: "VSQx.top", ja: "VSQx.top", zh: "VSQx.top" },
-          description: { en: "Motion and project file sharing.", ja: "プロジェクトファイル共有。", zh: "工程文件与调教分享。" },
-          icon: "FileAudio",
-          tags: ["ust", "vsqx"]
-        }
-      ]
-    },
-    {
       id: "community",
       title: {
         en: "Communities",
@@ -137,28 +171,28 @@ export const siteData: SiteConfig = {
       },
       items: [
         {
+          id: "discord",
+          url: "https://discord.gg/vocaloid",
+          name: { en: "Discord Server", ja: "Discord サーバー", zh: "Discord 频道" },
+          description: { en: "r/Vocaloid official Discord.", ja: "r/Vocaloid 公式Discord。", zh: "国际Vocaloid交流频道。" },
+          icon: "MessageSquare",
+          tags: ["chat", "global"]
+        },
+        {
           id: "reddit",
           url: "https://www.reddit.com/r/Vocaloid/",
-          name: { en: "r/Vocaloid", ja: "r/Vocaloid", zh: "Reddit Vocaloid版" },
+          name: { en: "r/Vocaloid", ja: "r/Vocaloid", zh: "Reddit 讨论区" },
           description: { en: "International discussion board.", ja: "国際的な掲示板。", zh: "国际讨论版块。" },
-          icon: "MessageSquare",
+          icon: "Globe",
           tags: ["forum"]
         },
         {
           id: "bilibili",
           url: "https://www.bilibili.com/v/music/vocaloid/",
           name: { en: "Bilibili Vocaloid", ja: "Bilibili", zh: "哔哩哔哩 Vocaloid区" },
-          description: { en: "Major Chinese video platform.", ja: "中国の動画プラットフォーム。", zh: "最大的中文Vocaloid视频社区。" },
+          description: { en: "Major Chinese community.", ja: "中国の動画コミュニティ。", zh: "最大的中文Vocaloid视频社区。" },
           icon: "Tv",
           tags: ["video", "chinese"]
-        },
-        {
-          id: "niconico",
-          url: "https://www.nicovideo.jp/genre/vocaloid",
-          name: { en: "Niconico", ja: "ニコニコ動画", zh: "Niconico动画" },
-          description: { en: "The birthplace of Vocaloid culture.", ja: "ボカロ文化の発祥地。", zh: "Vocaloid文化的发源地。" },
-          icon: "Video",
-          tags: ["video", "japanese"]
         }
       ]
     }
