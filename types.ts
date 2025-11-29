@@ -11,7 +11,8 @@ export interface LinkItem {
   url: string;
   name: LocalizedString;
   description: LocalizedString;
-  icon?: string; // Icon identifier
+  icon?: string; // Icon identifier (Lucide)
+  iconUrl?: string; // URL for custom image icon
   tags?: string[];
 }
 

@@ -16,6 +16,7 @@ export const siteData: SiteConfig = {
           name: { en: "VOCALOID Official", ja: "VOCALOID 公式", zh: "VOCALOID 官网" },
           description: { en: "The standard for vocal synthesis.", ja: "歌声合成のスタンダード。", zh: "歌声合成技术的行业标准。" },
           icon: "Mic2",
+          iconUrl: "https://www.vocaloid.com/favicon.ico",
           tags: ["yamaha", "editor"]
         },
         {
@@ -24,6 +25,7 @@ export const siteData: SiteConfig = {
           name: { en: "Synthesizer V", ja: "Synthesizer V", zh: "Synthesizer V" },
           description: { en: "AI-driven realistic vocals.", ja: "AI技術によるリアルな歌声。", zh: "AI驱动的逼真歌声合成软件。" },
           icon: "Sparkles",
+          iconUrl: "https://dreamtonics.com/wp-content/themes/homepage_theme_240416/assets/img/favicon.ico",
           tags: ["ai", "dreamtonics"]
         },
         {
@@ -32,6 +34,7 @@ export const siteData: SiteConfig = {
           name: { en: "ACE Studio", ja: "ACE Studio", zh: "ACE Studio" },
           description: { en: "Next-gen AI vocal synthesis.", ja: "次世代AI歌声合成。", zh: "新一代AI歌声合成引擎。" },
           icon: "Music",
+          iconUrl: "https://acestudio.ai/favicon.ico",
           tags: ["ai", "subscription"]
         },
         {
@@ -40,6 +43,7 @@ export const siteData: SiteConfig = {
           name: { en: "CeVIO AI", ja: "CeVIO AI", zh: "CeVIO AI" },
           description: { en: "Voice creation utilizing AI.", ja: "AI技術を活用した音声創作。", zh: "利用AI技术的语音创作软件。" },
           icon: "Cpu",
+          iconUrl: "https://cevio.jp/favicon.ico",
           tags: ["ai"]
         },
         {
@@ -48,6 +52,7 @@ export const siteData: SiteConfig = {
           name: { en: "OpenUtau", ja: "OpenUtau", zh: "OpenUtau" },
           description: { en: "Modern open-source UTAU editor.", ja: "UTAUのためのモダンなエディタ。", zh: "现代化的开源UTAU编辑器。" },
           icon: "Code",
+          iconUrl: "https://www.openutau.com/assets/images/favicon.png",
           tags: ["opensource", "free"]
         },
         {
@@ -56,6 +61,7 @@ export const siteData: SiteConfig = {
           name: { en: "Piapro Studio", ja: "Piapro Studio", zh: "Piapro Studio" },
           description: { en: "Crypton's vocal editor plugin.", ja: "クリプトン製ボーカルエディタ。", zh: "Crypton Future Media开发的编辑器插件。" },
           icon: "Music",
+          iconUrl: "https://piapro.net/intl/images/favicon.ico",
           tags: ["miku", "plugin"]
         }
       ]
