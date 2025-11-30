@@ -52,16 +52,16 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans text-gray-800">
       {/* Header */}
-      <header className="sticky top-0 z-40 w-full backdrop-blur-lg bg-white/70 border-b border-white/50 shadow-sm">
+      <header className="sticky top-0 z-40 w-full backdrop-blur-lg bg-white/70 border-b border-white/50 shadow-sm transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-16 sm:h-20">
             {/* Logo area */}
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-tr from-miku-400 to-miku-500 rounded-xl flex items-center justify-center shadow-lg shadow-miku-500/20 text-white">
-                <AudioWaveform className="w-6 h-6" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-tr from-miku-400 to-miku-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg shadow-miku-500/20 text-white shrink-0">
+                <AudioWaveform className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-miku-600 to-teal-700 tracking-tight">
+                <h1 className="text-lg sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-miku-600 to-teal-700 tracking-tight leading-tight">
                   {t.title}
                 </h1>
                 <p className="text-xs text-miku-700/80 font-medium hidden sm:block">
@@ -71,7 +71,7 @@ const App = () => {
             </div>
 
             {/* Controls */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <LanguageSwitcher currentLang={lang} onLanguageChange={setLang} />
             </div>
           </div>
@@ -79,10 +79,10 @@ const App = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main className="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
         
         {/* Search Bar */}
-        <div className="max-w-2xl mx-auto mb-16 relative group">
+        <div className="max-w-2xl mx-auto mb-10 sm:mb-16 relative group">
           <div className="absolute inset-0 bg-miku-400/20 rounded-full blur-xl group-hover:bg-miku-400/30 transition-colors"></div>
           <div className="relative">
             <input
@@ -90,26 +90,26 @@ const App = () => {
               placeholder={t.searchPlaceholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-6 py-4 pl-14 rounded-full bg-white/80 border border-white/60 shadow-lg shadow-miku-900/5 focus:outline-none focus:ring-2 focus:ring-miku-400/50 focus:border-miku-300 backdrop-blur-xl text-lg transition-all"
+              className="w-full px-4 sm:px-6 py-3 sm:py-4 pl-12 sm:pl-14 rounded-full bg-white/80 border border-white/60 shadow-lg shadow-miku-900/5 focus:outline-none focus:ring-2 focus:ring-miku-400/50 focus:border-miku-300 backdrop-blur-xl text-base sm:text-lg transition-all"
             />
-            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-miku-600/60" />
+            <Search className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 w-5 h-5 sm:w-6 sm:h-6 text-miku-600/60" />
           </div>
         </div>
 
         {/* Content Grid */}
-        <div className="space-y-16">
+        <div className="space-y-10 sm:space-y-16">
           {filteredCategories.length > 0 ? (
             filteredCategories.map(category => (
               <section key={category.id} className="animate-fade-in">
-                <div className="flex items-center gap-4 mb-8">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 relative pl-4">
-                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-miku-500 rounded-full"></span>
+                <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-8">
+                  <h2 className="text-xl sm:text-3xl font-bold text-gray-800 relative pl-4">
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 sm:h-8 bg-miku-500 rounded-full"></span>
                     {category.title[lang]}
                   </h2>
                   <div className="h-px flex-grow bg-gradient-to-r from-gray-200 to-transparent"></div>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                   {category.items.map(item => (
                     <LinkCard key={item.id} item={item} lang={lang} />
                   ))}
@@ -117,17 +117,17 @@ const App = () => {
               </section>
             ))
           ) : (
-            <div className="text-center py-20 text-gray-500">
-              <Search className="w-12 h-12 mx-auto mb-4 opacity-20" />
-              <p className="text-lg">{t.noResults}</p>
+            <div className="text-center py-12 sm:py-20 text-gray-500">
+              <Search className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4 opacity-20" />
+              <p className="text-base sm:text-lg">{t.noResults}</p>
             </div>
           )}
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mt-20 border-t border-white/50 bg-white/40 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-gray-500">
+      <footer className="mt-12 sm:mt-20 border-t border-white/50 bg-white/40 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8 text-center text-sm text-gray-500">
           <p>{t.footer}</p>
           <div className="mt-2 flex justify-center gap-4 text-xs opacity-70">
             <span>React</span>

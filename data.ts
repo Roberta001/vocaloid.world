@@ -74,6 +74,19 @@ export const siteData: SiteConfig = {
           icon: "Code",
           iconUrl: "https://www.openutau.com/assets/images/favicon.png",
           tags: ["opensource", "free"]
+        },
+        {
+          id: "voicevox",
+          url: "https://voicevox.hiroshiba.jp/",
+          name: { en: "VOICEVOX", ja: "VOICEVOX", zh: "VOICEVOX" },
+          description: { 
+            en: "Free-to-use text-to-speech and singing synthesis software.", 
+            ja: "無料で使える中品質なテキスト読み上げ・歌声合成ソフトウェア。", 
+            zh: "免费可用的文本转语音与歌声合成软件。" 
+          },
+          icon: "Mic",
+          iconUrl: "https://voicevox.hiroshiba.jp/favicon-32x32.png",
+          tags: ["tts", "free", "ai"]
         }
       ]
     },

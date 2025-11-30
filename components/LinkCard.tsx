@@ -16,7 +16,7 @@ export const LinkCard: React.FC<Props> = ({ item, lang }) => {
       rel="noopener noreferrer"
       className="group relative block h-full"
     >
-      <div className="h-full bg-white/70 backdrop-blur-md rounded-xl p-5 border border-white/50 shadow-sm hover:shadow-lg hover:border-miku-300 hover:-translate-y-1 transition-all duration-300">
+      <div className="h-full bg-white/70 backdrop-blur-md rounded-xl p-4 sm:p-5 border border-white/50 shadow-sm hover:shadow-lg hover:border-miku-300 hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-start justify-between mb-3">
           <div className="p-2.5 bg-gradient-to-br from-miku-50 to-miku-100 rounded-lg text-miku-600 group-hover:text-miku-700 group-hover:scale-110 transition-transform duration-300">
             {item.iconUrl ? (
